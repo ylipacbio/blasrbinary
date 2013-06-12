@@ -37,9 +37,10 @@ Citation:
 
 Note:
 
-  If this blasr executable does not work on your own Linux system, 
-  please download blasr's source code at
+  This blasr binary is only tested on Ubuntu 10.04 and 12.04, but may 
+  work on other Linux sytems. This binary may not be the most up-to-date,
+  so consider compiling from the source code at
      https://github.com/PacificBiosciences/blasr
-  , and follow the instructions described at 
+  following the instructions described in
      https://github.com/PacificBiosciences/blasr/blob/master/README.txt
   .
