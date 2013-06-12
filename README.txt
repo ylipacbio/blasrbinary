@@ -1,7 +1,7 @@
 Summary:
 
   blasr is an executable of BLASR compiled under Ubuntu 12.04, which 
-  can align PacBio reads to reference genomes.
+  can align PacBio long reads to reference genomes.
 
   This executable is provided for the convenience of users who want to
   try blasr in Unbutu (10.04 or 12.04) without compiling the source code. 
@@ -9,16 +9,22 @@ Summary:
 Instructions:
 
   # 1. Download blasr binary.
+  # You can use command 'git clone' to pull the repository from github.
   > git clone git://github.com/ylipacbio/blasrbinary.git
-  # 2. Change access mode of blasr binary.
   > cd blasrbinary
+
+  # Alternatively, you can also use 'wget' to download the binary directly.
+  > wget https://github.com/ylipacbio/blasrbinary/raw/master/blasr
+
+  # 2. Change access mode of blasr binary.
   > chmod +x blasr
+
   # 3. Try blasr.
   > ./blasr -h
 
 Typical use cases:
 
-  # Aligns reads from reads.fasta to reference sequences in ref.fasta,
+  # Align reads from reads.fasta to reference sequences in ref.fasta,
   # and output in human-readable format.
   > blasr reads.fasta   ref.fasta -m 0 
 
